@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "604104608504",
+    "firebase_url": "https://freechat-mad.firebaseio.com",
+    "project_id": "freechat-mad",
+    "storage_bucket": "freechat-mad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604104608504:android:e29ef7c0921072a5",
+        "android_client_info": {
+          "package_name": "com.freechat.flashchatnewfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604104608504-nc24b2pa7u6ludkgun0b5jj3ckjh33vv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBja7aP_YjSpGOb3j5xLqBv-x6oqrAkjeQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
