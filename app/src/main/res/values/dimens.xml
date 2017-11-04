@@ -4,5 +4,6 @@
     <dimen name="activity_vertical_margin">10dp</dimen>
     <item name="visible" type="id"/>
     <item name="masked" type="id"/>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
 

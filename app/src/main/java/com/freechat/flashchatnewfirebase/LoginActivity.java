@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
                     showErrorDialog ("There was a problem signing in");
 
                 }else {
-                    Intent intent=new Intent(LoginActivity.this,MainChatActivity.class);
+                    Intent intent=new Intent(LoginActivity.this,About_app.class);
                     finish ();
                     startActivity (intent);
                 }
