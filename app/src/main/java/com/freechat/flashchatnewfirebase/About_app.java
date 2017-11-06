@@ -19,7 +19,7 @@ Button b1,b2;
         b1= (Button) findViewById (R.id.Developers);
         b2= (Button) findViewById (R.id.Back);
         //t1.setText ();
-     
+
 
         b1.setOnClickListener (new View.OnClickListener () {
             @Override
@@ -30,7 +30,7 @@ Button b1,b2;
                 finish ();
             }
         });
-
+ 
         b2.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick (View v) {
