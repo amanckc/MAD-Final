@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_green"
+    android:background="@color/black"
     tools:context="com.freechat.flashchatnewfirebase.About_developers">
 
     <Button
@@ -14,49 +14,55 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="67dp"
+        android:layout_marginBottom="29dp"
         android:text="Back"/>
 
     <ImageView
-        android:id="@+id/abhi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        app:srcCompat="@drawable/abhinav"/>
-
-    <ImageView
-        android:id="@+id/aman"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
+        android:id="@+id/amanim6"
+        android:layout_width="130dp"
+        android:layout_height="200dp"
+        android:layout_alignEnd="@+id/abhiim7"
+        android:layout_alignRight="@+id/abhiim7"
+        android:layout_below="@+id/abhiim7"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="21dp"
         app:srcCompat="@drawable/aman"/>
 
-    <TextView
-        android:id="@+id/textView1"
+    <ImageView
+        android:id="@+id/abhiim7"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_below="@+id/abhi"
-        android:layout_marginTop="37dp"
-        android:text="@string/abhi"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:layout_height="195dp"
+        android:layout_alignEnd="@+id/Back"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Back"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="41dp"
+        app:srcCompat="@drawable/abhi"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/abhitxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/Back"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="23dp"
+        android:layout_alignTop="@+id/abhiim7"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/amanim6"
+        android:layout_toRightOf="@+id/amanim6"
+        android:text="@string/abhi"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/amantxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/abhitxt"
+        android:layout_alignStart="@+id/abhitxt"
+        android:layout_alignTop="@+id/amanim6"
+        android:layout_marginTop="34dp"
         android:text="@string/aman"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:text="@string/aman"/>
+        android:textSize="20dp"/>
 
 </RelativeLayout>

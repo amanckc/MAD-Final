@@ -20,10 +20,10 @@
     <string name="sample_message">Hello!</string>
     <string name="title_activity_about_developers">About_developers</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="aman">AMAN SINGH 150905310</string>
+    <string name="aman">"AMAN SINGH\n\n150905310\n\nSection - B"</string>
 
 
-    <string name="abhi">ABHINAV RAJPUT 150905134</string>
+    <string name="abhi">"ABHINAV RAJPUT\n\n150905134\n\nSection - B"</string>
     <string name="aboutapp">Our application is a real-time chatting application, similar to WhatsApp. This app works on multiple devices and all those devices communicate to one another, which means we need to store data somewhere.
                             We integrated Firebase as a backend data
                             server where we can store and retrieve

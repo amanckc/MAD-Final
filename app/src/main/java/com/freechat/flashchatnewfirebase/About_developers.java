@@ -11,14 +11,16 @@ import android.widget.TextView;
 public class About_developers extends AppCompatActivity {
 Button b1;
     ImageView i1,i2;
-    //TextView t1,t2;
+    TextView t1,t2;
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_about_developers);
         b1= (Button) findViewById (R.id.Back);
-        i1= (ImageView) findViewById (R.id.abhi);
-        i2= (ImageView) findViewById (R.id.aman);
+        i1= (ImageView) findViewById (R.id.abhiim7);
+        i2= (ImageView) findViewById (R.id.amanim6);
+        t1 = (TextView) findViewById(R.id.abhitxt);
+        t2 = (TextView) findViewById(R.id.amantxt);
 
         b1.setOnClickListener (new View.OnClickListener () {
             @Override
