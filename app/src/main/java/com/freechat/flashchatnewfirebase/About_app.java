@@ -18,7 +18,7 @@ Button b1,b2;
         t1= (TextView) findViewById (R.id.textView);
         b1= (Button) findViewById (R.id.Developers);
         b2= (Button) findViewById (R.id.Back);
-        t1.setText ("hi about app");
+        //t1.setText ("hi about app");
 
 
         b1.setOnClickListener (new View.OnClickListener () {

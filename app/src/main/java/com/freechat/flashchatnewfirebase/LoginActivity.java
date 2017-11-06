@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -13,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,11 +32,14 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
+    Button b1,b2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        b1= (Button) findViewById (R.id.app);
+        b2= (Button) findViewById (R.id.dev);
 
         mEmailView = (AutoCompleteTextView) findViewById(R.id.login_email);
         mPasswordView = (EditText) findViewById(R.id.login_password);
@@ -53,11 +58,33 @@ public class LoginActivity extends AppCompatActivity {
         // TODO: Grab an instance of FirebaseAuth
         mAuth=FirebaseAuth.getInstance ();
 
+        b1.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick (View v) {
+                Intent i=new Intent (LoginActivity.this,About_app.class);
+
+                startActivity (i);
+                finish ();
+            }
+        });
+
+        b2.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick (View v) {
+                Intent i=new Intent (LoginActivity.this,About_developers.class);
+
+                startActivity (i);
+                finish ();
+            }
+        });
+
     }
-    @Override
+   /* @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.options_menu,menu);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         return true;
     }
 
@@ -77,7 +104,7 @@ public class LoginActivity extends AppCompatActivity {
             default:return super.onOptionsItemSelected(mi);
 
         }
-    }
+    }*/
 
     // Executed when Sign in button pressed
     public void signInExistingUser(View v)   {
