@@ -54,7 +54,7 @@
         android:layout_above="@+id/Back"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="23dp"
-        android:text="TextView"
+        android:text="@string/aman"
         android:textSize="18sp"
         android:textStyle="bold"
         tools:text="@string/aman"/>
