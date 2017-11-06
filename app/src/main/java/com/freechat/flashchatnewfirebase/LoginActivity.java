@@ -7,6 +7,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.AutoCompleteTextView;
@@ -51,6 +54,30 @@ public class LoginActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance ();
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.options_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem mi) {
+        switch(mi.getItemId()) {
+            case R.id.app:
+                Intent intent=new Intent(LoginActivity.this,About_app.class);
+                finish ();
+                startActivity (intent);
+                return true;
+            case R.id.dev:
+                Intent intent1=new Intent(LoginActivity.this,About_developers.class);
+                finish ();
+                startActivity (intent1);
+                return true;
+            default:return super.onOptionsItemSelected(mi);
+
+        }
+    }
 
     // Executed when Sign in button pressed
     public void signInExistingUser(View v)   {
@@ -86,7 +113,7 @@ public class LoginActivity extends AppCompatActivity {
                     showErrorDialog ("There was a problem signing in");
 
                 }else {
-                    Intent intent=new Intent(LoginActivity.this,About_app.class);
+                    Intent intent=new Intent(LoginActivity.this,MainChatActivity.class);
                     finish ();
                     startActivity (intent);
                 }

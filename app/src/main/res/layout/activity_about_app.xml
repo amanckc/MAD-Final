@@ -9,38 +9,37 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="261dp"
         android:text="TextView"
         android:textColor="@color/black"
         android:textSize="24sp"
-        tools:text="hi enter info about the app"/>
+        tools:text="hi enter info about the app"
+        android:layout_alignBottom="@+id/Developers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="113dp"/>
 
     <Button
-        android:id="@+id/chat_button"
+        android:id="@+id/Developers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="108dp"
         android:background="@color/light_green"
         android:onClick="onChat"
-        android:text="ChatRoom"
-        android:textColor="@color/white"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="87dp"/>
+        android:text="Developers"
+        android:textColor="@color/white"/>
 
     <Button
-        android:id="@+id/dev_button"
+        android:id="@+id/Back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_alignLeft="@+id/chat_button"
-        android:layout_alignStart="@+id/chat_button"
-        android:layout_below="@+id/chat_button"
-        android:layout_marginTop="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
         android:onClick="onDev"
-        android:text="Developers"/>
+        android:text="Back"/>
 </RelativeLayout>

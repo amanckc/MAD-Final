@@ -8,7 +8,7 @@
     tools:context="com.freechat.flashchatnewfirebase.About_developers">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="67dp"
@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/abhi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -29,12 +29,12 @@
         app:srcCompat="@drawable/abhinav"/>
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/aman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/aman"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button"/>
+        android:layout_alignBottom="@+id/abhi"
+        android:layout_toEndOf="@+id/Back"
+        android:layout_toRightOf="@+id/Back"
+        app:srcCompat="@drawable/aman"/>
 
 </RelativeLayout>
