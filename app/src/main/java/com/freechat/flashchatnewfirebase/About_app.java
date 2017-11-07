@@ -30,7 +30,7 @@ Button b1,b2;
                 finish ();
             }
         });
- 
+
         b2.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick (View v) {
